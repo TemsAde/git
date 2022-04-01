@@ -9,20 +9,65 @@
 <h3>FILL THIS FORM TO REGISTER FOR THIS COHORT</h3>
 <body>
     <form action="results.html" method="get">
-        <div>
-            <Label>Full Name</Label>
-            <input type="name">
-        </div>
+        <p>
+            <Label for="name">Full Name</Label>
+            <input type="text" name="name" id="name" placeholder="Temi A. Adeoti">
+        </p>
 
-        <div>
-            <Label>Email address</Label>
-            <input type="email">
-        </div>
+        <p>
+            <Label for="email">Email address</Label>
+            <input type="email" name="email" id="email" placeholder="example@email.com">
+        </p>
 
-       <div>
-           <Label>Whatsapp Number</Label>
-           <input type="number">
-       </div>
+       <p>
+           <Label for="phone number">Whatsapp Number</Label>
+           <input type="tel" name="phone number" id="phone number"> 
+       </p>
+
+       <p>
+           <Label for="date">Date of Birth</Label>
+           <input type="date" name="date" id="date">
+       </p>
+
+       <p>
+           Track
+           <Label for="Web Development">Web Development</Label>
+           <input type="radio" name="track" id="Web Development" value="Web Development">
+
+           <label for="AI"> Artificial Intelligence</label>
+           <input type="radio" name="track" id="AI" value="Artificial Intelligence">
+
+           <label for="DS">Data Science</label>
+           <input type="radio" name="track" id="DS" value="Data Science">
+
+           <label for="UI/UX">UI/UX</label>
+           <input type="radio" name="track" id="UI/UX" value="UI/UX"> 
+       </p>
+
+       <p>
+           <Label for="state">State of Origin</Label>
+           <select name="state" id="state" multiple>
+               <option value="Abia">Abia</option>
+               <option label="Adamawa" value="Adamawa"></option>
+               <option label="Rivers" value="Rivers"></option>
+               <option label="Ekiti" value="Ekiti"></option>
+               <option label="Lagos" value="Lagos"></option>
+               <option label="Abuja" value="Abuja"></option>
+           </select>
+       </p>
+       <p>
+           In nothing less than 200 words, why should you be given the scholarship?
+
+          <p>
+              <textarea name="statement" id="statement" cols="30" rows="10"></textarea></p>
+        
+       </p>
+
+       <button type="submit">SUBMIT</button>
+    
+
+
+    
     </form>
 </body>
 </html>
